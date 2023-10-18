@@ -43,15 +43,7 @@
 }
 
 .secondLevelBlock {
-    display: none;
-}
-
-.secondLevelBlockOpened {
-    display: block;
-}
-
-.secondLevelBlockOpened:last-child {
-    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .thirdLevel {
@@ -60,11 +52,13 @@
     margin-bottom: 10px;
 
     cursor: pointer;
+    text-wrap: nowrap;
 
-    color: var(--gray-dark);
+    color: #56585c;
 
     font-size: 14px;
     line-height: 19px;
+    outline-offset: -1px;
 }
 
 .thirdLevelActive,
